@@ -1,8 +1,8 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 
-export function Proyecto({ texto }: { texto: string }) {
-  return (
+export const Proyecto: React.FC<any> = ({ texto }) => {
+  return(
     <Box
       w="full"
       h="100px"
