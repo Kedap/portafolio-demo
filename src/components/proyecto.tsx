@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@chakra-ui/react";
 
 export const Proyecto: React.FC<any> = ({ texto }) => {
-  return(
+  return (
     <Box
       w="full"
       h="100px"
@@ -13,6 +13,6 @@ export const Proyecto: React.FC<any> = ({ texto }) => {
       {texto}
     </Box>
   );
-}
+};
 
 export default Proyecto;
