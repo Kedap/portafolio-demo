@@ -6,6 +6,7 @@ export const theme = extendTheme({
     paleta1: {
       primario: "#FDFFFC",
       secundario: "#FF0022",
+      secundarioTransparente: "rgba(255,0,34,0.5)",
       terceario: "#41EAD4",
       soporte1: "#011627",
       soporte2: "#B91372",

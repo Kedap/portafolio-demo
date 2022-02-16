@@ -1,7 +1,21 @@
 import React from "react";
-import { Grid, Image, VStack, Heading, Text, Link } from "@chakra-ui/react";
+import {
+  Grid,
+  Image,
+  VStack,
+  Heading,
+  Text,
+  Link,
+  Icon,
+} from "@chakra-ui/react";
 import { Proyecto } from "./components/proyecto";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+
+// Iconitos
+import { BiPackage, BiSync } from "react-icons/bi";
+import { ImGithub, ImTelegram, ImMail4 } from "react-icons/im";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { SiChatbot } from "react-icons/si";
+import { GrVirtualMachine } from "react-icons/gr";
 
 function App() {
   return (
@@ -26,20 +40,51 @@ function App() {
       />
 
       <VStack gridArea="t">
-        <Heading>
-          <Link href="https://github.com/kedap" color="paleta1.terceario">
-            Kedap
-            <ExternalLinkIcon mx="0.1px" />
-          </Link>{" "}
-          Avellana
-        </Heading>
-        <Text>Portafolio del Kedap</Text>
+        <Heading color="paleta1.terceario">Kedap Avellana</Heading>
+        <Text>Portafolio del Kedap o alguna informacion relevante</Text>
+        <Text>
+          <Link href="https://github.com/kedap">
+            <Icon h={6} w={6} as={ImGithub} />
+          </Link>
+          <Link href="https://t.me/Kedap_Develop">
+            {" "}
+            <Icon h={6} w={6} as={ImTelegram} />
+          </Link>
+          <Link href="mailto:kedap.dev@protonmail.com">
+            {" "}
+            <Icon h={6} w={6} as={ImMail4} />
+          </Link>
+          <Link href="https://twitter.com/kedap_avellana">
+            {" "}
+            <Icon h={6} w={6} as={AiFillTwitterCircle} />
+          </Link>
+        </Text>
       </VStack>
 
-      <Proyecto texto="Proyecto 1" gridArea="p1" />
-      <Proyecto texto="Proyecto 2" gridArea="p2" />
-      <Proyecto texto="Proyecto 3" gridArea="p3" />
-      <Proyecto texto="Proyecto 4" gridArea="p4" />
+      <Proyecto
+        texto="ApmPKG"
+        gridArea="p1"
+        srcPro="https://github.com/kedap/apmpkg"
+        icono={BiPackage}
+      />
+      <Proyecto
+        texto="Syncre"
+        gridArea="p2"
+        srcPro="https://github.com/Kedap/syncre"
+        icono={BiSync}
+      />
+      <Proyecto
+        texto="Shashi-bot"
+        gridArea="p3"
+        srcPro="https://github.com/kedap/shashi-bot"
+        icono={SiChatbot}
+      />
+      <Proyecto
+        texto="Makechine"
+        gridArea="p4"
+        srcPro="https://github.com/Kedap/makechine"
+        icono={GrVirtualMachine}
+      />
       <Proyecto texto="Proyecto 5" gridArea="p5" />
       <Proyecto texto="Proyecto 6" gridArea="p6" />
       <Proyecto texto="Proyecto 7" gridArea="p7" />
